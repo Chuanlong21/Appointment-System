@@ -1,16 +1,17 @@
-import { NextApiRequest } from 'next';
+
 import {PrismaClient} from "@prisma/client";
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Resend } from 'resend';
 import KoalaWelcomeEmail from "@/components/unity/Email";
+import {NextRequest} from "next/server";
 
 const prisma = new PrismaClient()
 const employeeInfoFile = path.resolve(process.cwd(), 'public/employees.json');
 const activityFile = path.resolve(process.cwd(), 'public/activity.json');
 const resend = new Resend(process.env["RESEND_API_KEY "]);
 
-export async function POST(req: NextApiRequest, {params}){
+export async function POST(req: NextRequest, {params}){
     let res = {message : 'Invalid request'}
     const slug = params.slug
 
@@ -84,7 +85,7 @@ export async function POST(req: NextApiRequest, {params}){
 }
 
 
-export async function GET(req: NextApiRequest, {params}){
+export async function GET(req: NextRequest, {params}){
     let res = {message : 'Invalid request'}
     const slug = params.slug
 
