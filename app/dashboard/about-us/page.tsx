@@ -14,9 +14,6 @@ const GlobalStyle = createGlobalStyle`
 
   }
 
-
-
-
   .b-font {
     font-family: 'Playwrite CZ', cursive;
     font-weight: 400; /* 根据需要调整权重 */

@@ -22,7 +22,7 @@ export default function ContactLayer() {
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="mb-2">Phone: 860-633-3989</div>
+              <div className="mb-2">Phone: <a href="tel:860-633-3989" className="text-blue-500">860-633-3989</a></div>
 
               <div>Address: 2840 Main St, Glastonbury, CT 06033</div>
             </CardContent>

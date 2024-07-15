@@ -46,6 +46,14 @@ export function Navigation_top() {
                 </NavigationMenuItem> */}
 
                 <NavigationMenuItem>
+                    <Link href="/dashboard/services" legacyBehavior passHref>
+                        <NavigationMenuLink className={navigation_word_style()}>
+                            Services
+                        </NavigationMenuLink>
+                    </Link>
+                </NavigationMenuItem>
+
+                <NavigationMenuItem>
                     <Link href="/dashboard/about-us" legacyBehavior passHref>
                         <NavigationMenuLink className={navigation_word_style()}>
                             About us
