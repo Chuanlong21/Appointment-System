@@ -80,7 +80,9 @@ const config = {
       backgroundImage: {
         'leaf': "url('../public/images/leaf.jpg')",
         'light': "url('../public/images/light.jpg')",
-        'map': "url('../public/images/map.png')"
+        'map': "url('../public/images/map.png')",
+        'contact': "url('../public/images/contact.jpg')",
+        'massage': "url('../public/images/massage1.jpg')"
       },
     },
   },

@@ -29,13 +29,13 @@ export function Navigation_top() {
                     </Link>
                 </NavigationMenuItem>
 
-                <NavigationMenuItem>
-                    <Link href="/dashboard/book" legacyBehavior passHref>
-                        <NavigationMenuLink className={navigation_word_style()}>
-                            Book
-                        </NavigationMenuLink>
-                    </Link>
-                </NavigationMenuItem>
+                {/*<NavigationMenuItem>*/}
+                {/*    <Link href="/dashboard/book" legacyBehavior passHref>*/}
+                {/*        <NavigationMenuLink className={navigation_word_style()}>*/}
+                {/*            Book*/}
+                {/*        </NavigationMenuLink>*/}
+                {/*    </Link>*/}
+                {/*</NavigationMenuItem>*/}
 
                 {/* <NavigationMenuItem>
                     <Link href="/docs" legacyBehavior passHref>

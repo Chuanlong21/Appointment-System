@@ -11,8 +11,9 @@ export default function ContactUs() {
         </header>
 
         <main className="flex flex-col ">
-          <div className="w-full h-[20vh] flex-grow bg-stone-200">
-            <h1>Contact Us</h1>
+          <div className="bg-contact w-full h-[20vh] flex flex-col justify-center justify-center items-center gap-4"
+               style={{ backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}>
+            <h1 className={"text-3xl  font-bold"}>Contact Us</h1>
             <p>We&apos;re Here to Help and Hear from You!</p>
           </div>
           <div className="w-full h-[60vh] flex-grow">

@@ -16,15 +16,15 @@ export default function ContactLayer() {
         <div className="flex space-x-8">
           <Card className="w-[350px] h-[280px]">
             <CardHeader>
-              <CardTitle className="">Contact Us</CardTitle>
+              <CardTitle className="">Let&apos;s Talk</CardTitle>
               <CardDescription>
-                We&apos;re Here to Help and Hear from You!
+                We&apos;re Here waiting for You!
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="mb-2">Phone: 000-000-0000</div>
-              <div className="mb-2">Email: test@email.com</div>
-              <div>Address: 000 ave, city, state, zip code</div>
+              <div className="mb-2">Phone: 860-633-3989</div>
+
+              <div>Address: 2840 Main St, Glastonbury, CT 06033</div>
             </CardContent>
           </Card>
           {/* <div>

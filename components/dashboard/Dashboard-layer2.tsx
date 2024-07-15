@@ -12,13 +12,14 @@ export default function DashboardLayer2() {
             Beauty & Relaxation
           </h1>
           <p className="text-center mt-4">
-            Your spa description goes here. Make appointment now
+            Your spa description goes here.
+            Please Call (860) 633-3989 to make appointment now !!
           </p>
-          <div className="flex justify-center mt-4">
-          <Button asChild>
-            <Link href="dashboard/book">Make Appointment</Link>
-          </Button>
-        </div>
+        {/*  <div className="flex justify-center mt-4">*/}
+        {/*  <Button asChild>*/}
+        {/*    <Link href="dashboard/book">Make Appointment</Link>*/}
+        {/*  </Button>*/}
+        {/*</div>*/}
         </div>
       </div>
     </>
