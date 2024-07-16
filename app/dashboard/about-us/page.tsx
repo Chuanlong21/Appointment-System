@@ -31,7 +31,7 @@ export default function AboutUs() {
         <>
             <GlobalStyle/>
             <div className="flex flex-col min-h-screen">
-                <header className="flex justify-between items-center px-4 py-3 bg-white border-b border-gray-300 h-16">
+                <header className="flex justify-between items-center px-4 py-3 h-[10vh]">
                     <DashboardHead/>
                 </header>
 
