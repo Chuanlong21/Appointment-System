@@ -1,61 +1,70 @@
+'use client';
 import DashboardHead from "@/components/dashboard/Dashboard-head";
 
 import DashboardFooter from "@/components/dashboard/Dashboard-footer";
 import Image from "next/image";
+import {createGlobalStyle} from "styled-components";
+const GlobalStyle = createGlobalStyle`
+ 
+ 
+    
 
+`;
 
 export default function Services(){
     return (
         <>
+            <GlobalStyle />
             <div className="h-screen flex flex-col">
-                <header className="flex justify-between items-center p-4  w-full h-[10vh]">
+                <header className="flex justify-between items-center px-4 py-2 bg-white w-full">
                     <DashboardHead />
                 </header>
 
-                <main className="flex flex-col flex-grow overflow-auto justify-between items-center">
-
-
-                    <div className="flex flex-row gap-10">
+                <main className="flex-grow overflow-auto p-4">
+                    <div className="flex flex-col md:flex-row gap-10 mb-10">
                         <Image
                             src="/images/body-massage.jpg"
-                            width={400}
+                            width={300}
                             height={400}
-                            alt="Company Location"
-                            className="object-cover rounded-lg mx-auto"
+                            alt="Body Massage"
+                            className="rounded-lg"
                         />
-                        <div>
-                            <p>Hello</p>
+                        <div className="flex flex-col justify-center">
+                            <h1 className="text-2xl font-bold mb-2">Body Massage</h1>
+                            <p className="mb-4">Starting at $60</p>
+                            <ul className="list-disc pl-5">
+                                <li>30 minutes - $60</li>
+                                <li>60 minutes - $100</li>
+                                <li>90 minutes - $140</li>
+                            </ul>
                         </div>
                     </div>
 
-                    <div className="flex flex-row gap-10">
-                        <div>
-                            <p>Hello</p>
-                        </div>
+                    <div className="flex flex-col md:flex-row-reverse gap-10 mb-10">
                         <Image
                             src="/images/foot-massage.jpg"
-                            width={500}
-                            height={500}
-                            alt="Company Location"
-                            className="object-cover rounded-lg mx-auto"
+                            width={300}
+                            height={400}
+                            alt="Foot Massage"
+                            className="rounded-lg"
                         />
+                        <div className="flex flex-col justify-center">
+                            <h1 className="text-2xl font-bold mb-2">Foot Massage</h1>
+                            <p className="mb-4">Starting at $45</p>
+                            <ul className="list-disc pl-5">
+                                <li>30 minutes - $45</li>
+                                <li>60 minutes - $85</li>
+                            </ul>
+                        </div>
                     </div>
+
                     <div>
-                        <p>Spa Combo</p>
-                        <p>Welcome to Health & Beauty Spa, where your well-being is our top priority. We specialize in a variety of therapeutic services designed to melt away the stress of your busy day. Whether you're seeking relief from shoulder and neck tension, lymphatic drainage, or body knot release, our skilled therapists are here to provide you with personalized care.
-
-                            At Health & Beauty Spa, we believe that every guest deserves to feel valued and rejuvenated. Our commitment to exceptional service ensures that you leave our place feeling relaxed and refreshed. We aim to create a tranquil environment where you can escape the hustle and bustle of everyday life and find peace and serenity.
-
-                            Visit us today and discover how our dedicated team can help you achieve the ultimate in relaxation and wellness. Your journey to a more balanced and stress-free life begins here.</p>
+                        <h1 className="text-2xl font-bold mb-2">Spa Combo</h1>
+                        <p>Welcome to Health & Beauty Spa, where your well-being is our top priority. We specialize in a variety of therapeutic services designed to melt away the stress of your busy day. Your journey to a more balanced and stress-free life begins here.</p>
                     </div>
-
-
-
-
-
                 </main>
 
-                <footer className="p-4 bg-gray-800 text-white w-full h-[10vh]">
+                <footer className="p-4 bg-gray-800 text-white w-full">
                     <DashboardFooter />
                 </footer>
             </div>
